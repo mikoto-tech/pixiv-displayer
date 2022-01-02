@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'net.mikoto.pixiv'
-version = '1.0.0'
+version = '1.0.1'
 sourceCompatibility = '17'
 
 repositories {
@@ -16,7 +16,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'commons-io:commons-io:2.11.0'
-    implementation 'net.mikoto.pixiv:pixiv-engine:1.0.0'
+    implementation 'net.mikoto.pixiv:pixiv-engine:1.0.4'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
