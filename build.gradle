@@ -14,9 +14,11 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.alibaba:fastjson:1.2.79'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'commons-io:commons-io:2.11.0'
     implementation 'net.mikoto.pixiv:pixiv-engine:1.0.4'
+    implementation 'net.mikoto.pixiv:pixiv-api:1.0.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
