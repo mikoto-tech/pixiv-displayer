@@ -32,7 +32,7 @@ public class ArtworkController {
                                  @RequestParam String artworkId) {
         PixivData pixivData = null;
         try {
-            pixivData = PixivDisplayerApplication.PIXIV_ENGINE.getPixivDataService().getPixivDataById(Integer.valueOf(artworkId), PixivDisplayerApplication.PIXIV_ENGINE.getPixivDataDao());
+            pixivData = PixivDisplayerApplication.PIXIV_ENGINE.getPixivDataService().getPixivDataById(PixivDisplayerApplication.PIXIV_ENGINE.getPixivDataService().getPixivDataForwardServer(), Integer.valueOf(artworkId), PixivDisplayerApplication.PIXIV_ENGINE.getPixivDataDao());
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (NullPointerException e) {
@@ -105,16 +105,16 @@ public class ArtworkController {
      * @return A string.
      */
     private String getString(PixivData pixivData) {
+        JSONObject jsonObject;
         if (pixivData != null) {
-            JSONObject jsonObject = pixivData.toJsonObject();
+            jsonObject = pixivData.toJsonObject();
             jsonObject.put("error", false);
             jsonObject.put("msg", "");
-            return jsonObject.toJSONString();
         } else {
-            JSONObject jsonObject = new JSONObject();
+            jsonObject = new JSONObject();
             jsonObject.put("error", true);
             jsonObject.put("msg", "No such artwork");
-            return jsonObject.toJSONString();
         }
+        return jsonObject.toJSONString();
     }
 }
