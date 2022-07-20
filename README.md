@@ -1,3 +1,9 @@
+# Here is mikoto
+# This repository has already unused.
+# The code here is really old and unuseful.
+# You shouldn't use it.
+# Instead you can use [pixiv-frontend](https://github.com/mikoto-tech/pixiv-frontend)
+
 # Mikoto-Pixiv-Displayer
 
 Mikoto-Pixiv-Displayer 是提供Pixiv外部服务的基础库
