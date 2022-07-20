@@ -2,7 +2,7 @@
 # This repository has already unused.
 # The code here is really old and unuseful.
 # You shouldn't use it.
-# Instead you can use [pixiv-frontend](https://github.com/mikoto-tech/pixiv-frontend)
+# Instead, you can use [pixiv-frontend](https://github.com/mikoto-tech/pixiv-frontend)
 
 # Mikoto-Pixiv-Displayer
 
